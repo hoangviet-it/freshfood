@@ -1,0 +1,64 @@
+:root {
+    --color-text: #5e5e5e;
+}
+.service {
+    border: 1px solid var(--color-text);
+    color: var(--color-text);
+    line-height: 28px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-align: justify;
+    width: 100%;
+}
+.service img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 28px;
+}
+.service span {
+    font: 13pt 'Roboto Regilar';
+}
+.advertisement {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 1169px) {
+    .container-right {
+        margin: auto;
+        margin-top: 20px;
+        width: 900px;
+    }
+    .advertisement {
+        margin: auto;
+        margin-top: 20px;
+        width: 330px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container-right {
+        margin: auto;
+        margin-top: 20px;
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container-right {
+        margin: auto;
+        margin-top: 20px;
+        width: 450px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .container-right,
+    .advertisement,
+    .advertisement img {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .container-right,
+    .advertisement,
+    .advertisement img {
+        width: 220px;
+    }
+}

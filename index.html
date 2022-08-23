@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomeFreshFood</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="wrap-btn-menu">
+                <button class="btn-menu-mobile">
+                    <i class="fas fa-bars" onclick="showMenu()"></i>
+                    <i class="fas fa-times close-menu-mobile" onclick="closeMenu()"></i>
+                </button>
+            </div>
+            <h1>
+                <a href="#!" title="LOGO FRESH FOOD">
+                    <img src="./img/img1.png" alt="Image logo">
+                </a>
+            </h1>
+            <div class="menu-search-cart">
+                <ul class="ul-pc">
+                    <li><a href="#!" title="Trang chủ">trang chủ</a></li>
+                    <li><a href="#!" title="Thịt tươi">thịt tươi</a></li>
+                    <li><a href="#!" title="Rau sạch">rau sạch</a></li>
+                    <li><a href="#!" title="Quả ngọt">quả ngọt</a></li>
+                    <li><a href="./categoryNews.html" title="Cẩm nang">cẩm nang</a></li>
+                    <li><a href="#!" title="Liên hệ">liên hệ</a></li>
+                    <li><a href="#!" title="Thanh toán">thanh toán</a></li>
+                </ul>
+                <div class="succinct">
+                    <ul class="ul-tablet">
+                        <li class="search">
+                            <div onclick="showSearch()" class="icon-search"><i class="fas fa-search"></i></div>
+                            <div onclick="hiddenSearch()" class="icon-close"><i class="fas fa-times"></i></div>
+                        </li>
+                        <li><a href="./cart.html" title="Giỏ hàng" class="icon-cart">
+                            <img src="./img/cart.png" alt="Icon Cart">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quantity-cart">3</div>
+            <div class="header-search">
+                <input type="text" name="search" placeholder="Tìm Kiếm" id="search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <ul class="element-menu-rps">
+            <li class="search-mobile">
+                <input type="text" name="search-mobile" placeholder="Tìm Kiếm">
+                <button><i class="fas fa-search"></i></button>
+            </li>
+            <li><a href="#!" title="Trang chủ">trang chủ</a></li>
+            <li><a href="#!" title="Thịt tươi">thịt tươi</a></li>
+            <li><a href="#!" title="Rau sạch">rau sạch</a></li>
+            <li><a href="#!" title="Quả ngọt">quả ngọt</a></li>
+            <li><a href="./categoryNews.html" title="Cẩm nang">cẩm nang</a></li>
+            <li><a href="#!" title="Liên hệ">liên hệ</a></li>
+            <li><a href="#!" title="Thanh toán">thanh toán</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <section class="slide">
+            <div class="slide-wrapper">
+                <div class="slide-main">
+                    <div class="image-control-slide" data-index1="0">
+                        <img src="./img/img2.png" alt="Image slide">
+                    </div>
+                    <div class="image-control-slide" data-index1="1">
+                        <img src="./img/img2.png" alt="Image slide">
+                    </div>
+                    <div class="image-control-slide" data-index1="2">
+                        <img src="./img/img2.png" alt="Image slide">
+                    </div>
+                </div>
+            </div>
+            <div class="dotSlide">
+                <div class="frame-dot">
+                    <button class="dot active" data-index="0"></button>
+                    <button class="dot" data-index="1"></button>
+                    <button class="dot" data-index="2"></button>
+                </div>
+            </div>
+            <div class="control-slide">
+                <div class="left" onclick="prev()">
+                    <img src="./img/Left.png" alt="Prev">
+                </div>
+                <div class="right" onclick="next()">
+                    <img src="./img/Right.png" alt="Next">
+                </div>
+            </div>
+        </section>
+        <section class="category">
+            <div class="frame-img-category">
+                <img src="./img/img3.png" alt="Background Category">
+                <a href="./category.html" title="Title" style="text-decoration: none;color:#000;">
+                    <div class="border-text">
+                        <div class="bg-text">thực phẩm</div>
+                    </div>
+                </a>
+            </div>
+            <div class="frame-img-category">
+                <img src="./img/img4.png" alt="Background Category">
+                <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                    <div class="border-text">
+                        <div class="bg-text">rau sạch</div>
+                    </div>
+                </a>
+            </div>
+            <div class="frame-img-category">
+                <img src="./img/img5.png" alt="Background Category">
+                <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                    <div class="border-text">
+                        <div class="bg-text">trái cây</div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="new-food">
+            <div class="container-new-food">
+                <div class="title-new-food">
+                    <h2>thực phẩm mới nhất</h2>
+                    <img src="./img/img6.png" alt="Icon">
+                </div>
+                <div class="slide-new-food">
+                    <div class="wrap-slide-new-food">
+                        <div class="slide-main-new-food">
+                            <div class="item-slide">
+                                <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                                    <div class="img-product">
+                                        <img src="./img/img7.png" alt="Image Product">
+                                    </div>
+                                </a>
+                                <div class="content-produc">
+                                    <h3>Xà Lách Lâm Đồng</h3>
+                                    <p class="price">25.000 VNĐ</p>
+                                    <a href="#!" title="Title" style="text-decoration: none;color:#ad1b1b;">
+                                        <p class="add-cart">Thêm vào giỏ hàng</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item-slide">
+                                <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                                    <div class="img-product">
+                                        <img src="./img/img8.png" alt="Image Product">
+                                    </div>
+                                </a>
+                                <div class="content-produc">
+                                    <h3>Dẻ Sường Bò Úc</h3>
+                                    <p class="price">250.000 VNĐ</p>
+                                    <a href="#!" title="Title" style="text-decoration: none;color:#ad1b1b;">
+                                        <p class="add-cart">Thêm vào giỏ hàng</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item-slide">
+                                <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                                    <div class="img-product">
+                                        <img src="./img/img9.png" alt="Image Product">
+                                    </div>
+                                </a>
+                                <div class="content-produc">
+                                    <h3>Nho Đen mỹ</h3>
+                                    <p class="price">100.000 VNĐ</p>
+                                    <a href="#!" title="Title" style="text-decoration: none;color:#ad1b1b;">
+                                        <p class="add-cart">Thêm vào giỏ hàng</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item-slide">
+                                <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                                    <div class="img-product">
+                                        <img src="./img/img10.png" alt="Image Product">
+                                    </div>
+                                </a>
+                                <div class="content-produc">
+                                    <h3>Ngao Trắng</h3>
+                                    <p class="price">75.000 VNĐ</p>
+                                    <a href="#!" title="Title" style="text-decoration: none;color:#ad1b1b;">
+                                        <p class="add-cart">Thêm vào giỏ hàng</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item-slide">
+                                <a href="./detailProduct.html" title="Title" style="text-decoration: none;color:#000;">
+                                    <div class="img-product">
+                                        <img src="./img/img17.png" alt="Image Product">
+                                    </div>
+                                </a>
+                                <div class="content-produc">
+                                    <h3>Cá hồi bắc âu</h3>
+                                    <p class="price">250.000 VNĐ</p>
+                                    <a href="#!" title="Title" style="text-decoration: none;color:#ad1b1b;">
+                                        <p class="add-cart">Thêm vào giỏ hàng</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item-slide">
+                                <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                                <div class="img-product">
+                                    <img src="./img/img10.png" alt="Image Product">
+                                </div>
+                                </a>
+                                <div class="content-produc">
+                                    <h3>Ngao Trắng</h3>
+                                    <p class="price">75.000 VNĐ</p>
+                                    <a href="#!" title="Title" style="text-decoration: none;color:#ad1b1b;">
+                                        <p class="add-cart">Thêm vào giỏ hàng</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item-slide">
+                                <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                                    <div class="img-product">
+                                        <img src="./img/img7.png" alt="Image Product">
+                                    </div>
+                                </a>
+                                <div class="content-produc">
+                                    <h3>Xà Lách Lâm Đồng</h3>
+                                    <p class="price">25.000 VNĐ</p>
+                                    <a href="#!" title="Title" style="text-decoration: none;color:#ad1b1b;">
+                                        <p class="add-cart">Thêm vào giỏ hàng</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="item-slide">
+                                <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                                    <div class="img-product">
+                                        <img src="./img/img9.png" alt="Image Product">
+                                    </div>
+                                </a>
+                                <div class="content-produc">
+                                    <h3>Nho Đen mỹ</h3>
+                                    <p class="price">100.000 VNĐ</p>
+                                    <a href="#!" title="Title" style="text-decoration: none;color:#ad1b1b;">
+                                        <p class="add-cart">Thêm vào giỏ hàng</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-slide-food">
+                        <div class="left-new-food"  onclick="prevProduct()">
+                            <img src="./img/img11.png" alt="Control Left">
+                        </div>
+                        <div class="right-new-food" onclick="nextProduct()">
+                            <img src="./img/img12.png" alt="Control Right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="handbook">
+            <div class="container-handbook">
+                <div class="title-new-food title-handbook">
+                    <h2>cẩm nang nấu ăn</h2>
+                    <img src="./img/img13.png" alt="Icon">
+                </div>
+                <div class="hanbook-news">
+                    <div class="item-hanbook-news">
+                        <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                            <div class="frame-img-item-hb">
+                                <img src="./img/img14.png" alt="Image News Handbook">
+                            </div>
+                            <h3>Thịt bò hầm nấm</h3>
+                        </a>
+                        <p>Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản [...]</p>
+                    </div>
+                    <div class="item-hanbook-news">
+                        <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                            <div class="frame-img-item-hb">
+                                <img src="./img/img15.png" alt="Image News Handbook">
+                            </div>
+                            <h3>Dạ dày trộn cay</h3>
+                        </a>
+                        <p>Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản [...]</p>
+                    </div>
+                    <div class="item-hanbook-news">
+                        <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                            <div class="frame-img-item-hb">
+                                <img src="./img/img16.png" alt="Image News Handbook">
+                            </div>
+                            <h3>Bí quyết nấu ăn ngon</h3>
+                        </a>
+                        <p>Chúng ta vẫn biết rằng, làm việc với một đoạn văn bản dễ đọc và rõ nghĩa dễ gây rối trí và cản trở việc tập trung vào yếu tố trình bày văn bản [...]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="container-footer">
+            <div class="headquarters">
+                <h3>Trụ sở chính:</h3>
+                <p>Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.</p>
+                <p>Điện thoại: 04.3311.3998</p>
+                <p>Fax: 04.3311.3996</p>
+            </div>
+            <div class="headquarters">
+                <h3>Chi nhánh Đà Nẵng:</h3>
+                <p>Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.</p>
+                <p>Điện thoại: 04.3311.3998</p>
+                <p>Fax: 04.3311.3996</p>
+            </div>
+            <div class="headquarters">
+                <h3>Chi nhánh Hồ Chí Minh:</h3>
+                <p>Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.</p>
+                <p>Điện thoại: 04.3311.3998</p>
+                <p>Fax: 04.3311.3996</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2016 - All rights reserved</p>
+        </div>
+    </footer>
+    <script src="./js/header.js"></script>
+    <script src="./js/home.js"></script>
+</body>
+</html>

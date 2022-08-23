@@ -1,0 +1,40 @@
+footer {
+    background-color: var(--color-bg);
+    width: 100%;
+}
+.container-footer {
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1170px;
+}
+.headquarters {
+    max-width: 376px;
+    padding: 40px 0 20px 0;
+}
+.headquarters h3 {
+    font: 15pt 'Roboto Medium';
+}
+.headquarters p {
+    font: 10.5pt 'Roboto Regular';
+    line-height: 25px;
+    padding: 8px 0;
+}
+.copyright {
+    background-color: #fff;
+    font: 11pt 'Roboto Regular';
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1169px) {
+    .headquarters {
+        padding: 30px 15px;
+    }
+    .container-footer {
+        padding: 0 15px;
+    }
+}

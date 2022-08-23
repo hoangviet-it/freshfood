@@ -1,0 +1,106 @@
+.comment span a {
+    background-color: #4267b2;
+    border-radius: 4px;
+    color: #fff;
+    font: 9pt 'Roboto Regular';
+    padding: 4px 7px;
+    text-decoration: none;
+}
+.quantity-and-Sort {
+    border-bottom: 1px solid #d2d5da;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-top: 20px;
+}
+.quantity,
+.sort {
+    font: 10pt 'Roboto Medium';
+    line-height: 40px;
+}
+.sort {
+    color: #888;
+}
+.btn-sort {
+    background-color: #f6f7f9;
+    border: none;
+    border-radius: 4px;
+    color: #888;
+    cursor: pointer;
+    padding: 3px 7px;
+    outline: 1px solid rgb(214, 212, 212);
+}
+.img-avatar {
+    background-color: #d2d5da;
+    height: 45px;
+    text-align: center;
+    width: 45px;
+}
+.write-comment {
+    border-bottom: 1px solid #d2d5da;
+    display: flex;
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+.write-comment input {
+    border: none;
+    color: #999;
+    margin-left: 10px;
+    outline: 1px solid #d2d5da;
+    padding-left: 15px;
+    width: 100%;
+}
+.write-comment input::placeholder {
+    color: #999;
+}
+.img-avatar i {
+    color: #fff;
+    font-size: 30px;
+    line-height: 47px;
+}
+.link-fb {
+    font: 9pt 'Roboto Regular';
+    color: #4267b2;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.comment .g-plus a {
+    background: none;
+    border: 2px solid #d2d5da;
+    border-radius: 3px;
+    color: #dc4b3e;
+    font-size: 13px;
+    padding: 2px;
+}
+.quantity-g-plus {
+    border: 2px solid #d2d5da;
+    border-radius: 3px;
+    color: var(--color-text);
+    font-size: 10pt;
+    margin-left: 3px;
+    padding: 2px 5px 2px 5px;
+}
+.frame-quantity {
+    position: relative;
+}
+.triangle {
+    background-color: #fff;
+    border-top: 2px solid #d2d5da;
+    border-left: 2px solid #d2d5da;
+    height: 8px;
+    left: -1px;
+    position: absolute;
+    top: 35%;
+    transform: rotate(-45deg);
+    width: 8px;
+}
+.main {
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 280px) {
+    .quantity-and-Sort {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+}

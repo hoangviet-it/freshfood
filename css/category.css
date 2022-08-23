@@ -1,0 +1,187 @@
+@import url(../css/header.css);
+@import url(../css/footer.css);
+
+.bread-crumb {
+    height: 263px;
+    padding-bottom: 47px;
+    position: relative;
+    width: 100%;
+}
+.bread-crumb img {
+    height: 216px;
+    object-fit: cover;
+    width: 100%;
+}
+.bread-crumb .crumb-homepage {
+    color: #fff;
+    font: 10pt 'Roboto Regular';
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 36%;
+}
+.crumb-homepage a {
+    color: #fff;
+    text-decoration: none;
+}
+.crumb-homepage .fa-chevron-right {
+    font-size: 7pt;
+}
+.container-product {
+    margin: auto;
+    max-width: 1170px;
+}
+.title-page-food {
+    display: flex;
+    justify-content: space-between;
+    height: calc(90px - 23.333333333px);
+}
+.title-page-food h3 {
+    font: 18pt 'Roboto Medium';
+}
+.fillter {
+    max-width: 245px;
+    position: relative;
+}
+.fillter select {
+    border: none;
+    color: #bcbcbc;
+    cursor: pointer;
+    height: 40px;
+    outline: 2px solid #d7d7d7;
+    width: 180px;
+}
+.fillter button {
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    margin-left: -2px;
+    outline: 2px solid #d7d7d7;
+    width: 60px;
+}
+.fillter img {
+    margin-left: -20px;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 13px;
+}
+.card-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item-slide {
+    background-color: #fff;
+    border: 1px solid #b7b7b7;
+    height: 415px;
+    margin-top: 23.333333333px;
+    width: 275px;
+}
+.img-product,
+.img-product img {
+    border-bottom: 1px solid #b7b7b7;
+    height: 315px;
+    width: 100%;
+}
+.content-produc {
+    padding: 15px 0;
+    text-align: center;
+}
+.content-produc h3 {
+    font: 14pt 'Roboto Medium';
+}
+.content-produc .price {
+    font: 11pt 'Roboto Regular';
+    padding: 7px 0;
+}
+.content-produc .add-cart {
+    color: #ad1b1b;
+    font: 10pt 'Roboto Medium';
+}
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    margin: auto;
+    margin-bottom: 35px;
+    padding: 35px 0;
+    width: 115px;
+}
+.pagination div {
+    background-color: #c50808;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 35px;
+}
+
+@media only screen and (max-width: 1169px) {
+    .container-product {
+        padding: 0 25px;
+    }
+    .card-product {
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .card-product {
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 820px) {
+    .card-product {
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .item-slide {
+        height: 410px;
+        width: 260px;
+    }
+}
+@media only screen and (max-width: 479px) {
+    .title-page-food {
+        flex-wrap: wrap;
+        margin: auto;
+        width: 242px;
+    }
+    .fillter {
+       padding: 10px 0;
+    }
+    .fillter img {
+        top: 50%;
+    }
+    .card-product {
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .bread-crumb .crumb-homepage {
+        display: inline-block;
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 240px) {
+    .title-page-food {
+        width: 100%;
+        margin: 0;
+    }
+    .card-product {
+        margin-top: 50px;
+    }
+    .item-slide {
+        width: 220px;
+    }
+    .fillter select {
+        width: 180px;
+    }
+    .fillter img {
+        top: 30%;
+        margin-left: -15px;
+    }
+    .fillter button {
+        margin: 5px 0 0 .3px;
+    }
+}

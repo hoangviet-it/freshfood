@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Detail Product</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="../css/detailProduct.css">
+</head>
+<body>
+    <header>
+        <div class="container-header">
+            <div class="wrap-btn-menu">
+                <button class="btn-menu-mobile">
+                    <i class="fas fa-bars" onclick="showMenu()"></i>
+                    <i class="fas fa-times close-menu-mobile" onclick="closeMenu()"></i>
+                </button>
+            </div>
+            <h1>
+                <a href="#!" title="LOGO FRESH FOOD">
+                    <img src="../img/img1.png" alt="Image logo">
+                </a>
+            </h1>
+            <div class="menu-search-cart">
+                <ul class="ul-pc">
+                    <li><a href="./home.html" title="Trang chủ">trang chủ</a></li>
+                    <li><a href="#!" title="Thịt tươi">thịt tươi</a></li>
+                    <li><a href="#!" title="Rau sạch">rau sạch</a></li>
+                    <li><a href="#!" title="Quả ngọt">quả ngọt</a></li>
+                    <li><a href="./categoryNews.html" title="Cẩm nang">cẩm nang</a></li>
+                    <li><a href="#!" title="Liên hệ">liên hệ</a></li>
+                    <li><a href="#!" title="Thanh toán">thanh toán</a></li>
+                </ul>
+                <div class="succinct">
+                    <ul class="ul-tablet">
+                        <li class="search">
+                            <div onclick="showSearch()" class="icon-search"><i class="fas fa-search"></i></div>
+                            <div onclick="hiddenSearch()" class="icon-close"><i class="fas fa-times"></i></div>
+                        </li>
+                        <li><a href="./cart.html" title="Giỏ hàng" class="icon-cart">
+                            <img src="../img/cart.png" alt="Icon Cart">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="quantity-cart">3</div>
+            <div class="header-search">
+                <input type="text" name="search" placeholder="Tìm Kiếm" id="search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <ul class="element-menu-rps">
+            <li class="search-mobile">
+                <input type="text" name="search-mobile" placeholder="Tìm Kiếm">
+                <button><i class="fas fa-search"></i></button>
+            </li>
+            <li><a href="./home.html" title="Trang chủ">trang chủ</a></li>
+            <li><a href="#!" title="Thịt tươi">thịt tươi</a></li>
+            <li><a href="#!" title="Rau sạch">rau sạch</a></li>
+            <li><a href="#!" title="Quả ngọt">quả ngọt</a></li>
+            <li><a href="./categoryNews.html" title="Cẩm nang">cẩm nang</a></li>
+            <li><a href="#!" title="Liên hệ">liên hệ</a></li>
+            <li><a href="#!" title="Thanh toán">thanh toán</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="bread-crumb">
+            <img src="../img/img 17.png" alt="Image">
+            <span class="crumb-homepage">
+                <i class="fas fa-home"></i>&nbsp;&nbsp;
+                <a href="./home.html" title="Trang chủ">Trang chủ</a>&nbsp;&nbsp;
+                <i class="fas fa-chevron-right"></i>&nbsp;&nbsp;
+                <span>Thực phẩm</span>
+            </span>
+        </div>
+        <div class="main">
+            <div class="container-left">
+                <article class="head-product">
+                    <div class="frame-img-product">
+                        <img src="../img/img17.png" alt="Image Product">
+                    </div>
+                    <div class="title-price">
+                        <div class="evaluated margin-bottom">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h2 class="margin-bottom">Cá hồi bắc âu</h2>
+                        <p class="id-product margin-bottom">Mã sản phẩm: <span>Fre0001</span></p>
+                        <p class="price"><span>250.000</span> VNĐ</p>
+                        <p class="description margin-top-bottom">Cá hồi (Salmon) sinh sống dọc các bờ biển tại Bắc Đại Tây Dương (các họ di cư Salmo salar) và Thái Bình Dương (khoảng sáu họ của giống Onco-rhynchus),cũng đã từng được đưa tới Hồ lớn ở trên thế giới.</p> 
+                        <button>thêm vào giỏ hàng</button>
+                    </div>
+                </article>
+                <article class="infor-product">
+                    <h3>Thông tin sản phẩm:</h3>
+                    <p>Tôi luôn khuyên khách hàng của mình trả thêm tiền cho một sản phẩm chất lượng.<br>
+                        Với tôi:<br>
+                        "Cá hồi không phải là loại thực phẩm nên tìm mua dễ dãi, nhất định phải tìm đến những cơ sở uy tín, và tốt nhất ăn cá hồi mổ trong ngày"<br>
+                        Cá hồi ở CleverFood được nhập khẩu trực tiếp từ Leroy Seafood  Norway. Luôn là công ty dẫn đầu trong ngành nuôi trồng và kinh doanh hải sản, sản phẩm của Leroy hiện đang có mặt trên 100 quốc gia và đạt được tín nhiệm rất cao. Cá hồi của Leroy đã được chứng nhận về:<br>
+                        + MSC (Marine Stewardshop Council): Đạt tiêu chuẩn đánh bắt bền vững đối với thủy hải sản tự nhiên.<br>
+                        + Global Gap Aquaculture Standard: Tiêu chuẩn an toàn thực phẩm Global Gap toàn cầu.</p>
+                    <div class="frame-img-infor">
+                        <img src="../img/img18.png" alt="Image Infor">
+                    </div>
+                    <p>+ Cá hồi (Salmon) sinh sống dọc các bờ biển tại Bắc Đại Tây Dương (các họ di cư Salmo salar) và Thái Bình Dương (khoảng sáu họ của giống Oncorhynchus),cũng đã từng được đưa tới Hồ lớn ở Bắc Mỹ. Cá hồi được sản xuất nhiều trong ngành nuôi trồng thủy sản ở nhiều nơi trên thế giới.<br>
+                        + Cá hồi có tập tục sinh sản kì lạ,chúng sinh ra ở vùng nước ngọt,di cư ra biến,đến khi trưởng thành lại ngược sông lên thượng nguồn đẻ trứng.Người ta đã chứng minh được cá hồi quay trở lại chính xác nơi nó sinh ra để sinh sản nhờ vào kí ức khứu giác.Trứng cá hồi được đẻ tại những dòng suối nước ngọt thông thường ở nơi có độ cao lớn,nơi nước nguồn tươi sạch.Hành trình của chúng quả thực rất gian nan,cá hồi bị sụt giảm sức khỏe trầm trọng, thường chết sau 2,3 tuần đẻ trứng,chỉ có khoảng 2-4% là có thể quay lại sinh sản lần 2.Đã có nhiều thước phim ghi lại cảnh di cư hoành tráng của cá hồi.</p>
+                </article>
+                <article class="comment">
+                    <span>
+                        <a href="#!" title="Like this posts"><i class="fas fa-thumbs-up"></i>&nbsp;&nbsp;Thích <span>0</span></a>
+                    </span>
+                    <span><a href="#!" title="Share">Chia sẻ</a></span>
+                    <span class="g-plus"><a href="#!" title="G+"><i class="fab fa-google-plus-g"></i><span>1</span></a></span>
+                    <span class="frame-quantity">
+                        <span class="quantity-g-plus">0</span>
+                        <div class="triangle"></div>
+                    </span>
+                    <div class="quantity-and-Sort">
+                        <div class="quantity">
+                            <span>0</span>
+                            <span>&nbsp;bình luận</span>
+                        </div>
+                        <div class="sort">
+                            <span>Sắp xếp theo </span>
+                            <select class="btn-sort">
+                                <option>Cũ Nhất</option>
+                                <option>Mới Nhất</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="write-comment">
+                        <div class="img-avatar"><i class="fas fa-user"></i></div>
+                        <input type="text" name="comment" placeholder="Thêm bình luận...">
+                    </div>
+                    <div class="link-fb">
+                        <i class="fab fa-facebook-square"></i>&nbsp;
+                        <span>Facebook </span>
+                        <span> Comments </span>
+                        <span> Plugin</span>
+                    </div>
+                </article>
+            </div>
+            <div class="container-right">
+                <div class="service">
+                    <img src="../img/img19.png" alt="Icon Like">&nbsp;&nbsp;
+                    <span>Cam kết giá tốt nhất Chúng tôi cam kết tới khách hàng những sản phẩm tốt nhất với mức thấp nhất</span>
+                </div>
+                <div class="service space">
+                    <img src="../img/img20.png" alt="Icon Like">&nbsp;&nbsp;
+                    <span>Giao hàng toàn quốc Giao hàng tới 64 tỉnh thành với giá cước hợp lý nhất. Đảm bảo thời gian tốt nhất.</span>
+                </div>
+                <div class="service">
+                    <img src="../img/img21.png" alt="Icon Like">&nbsp;&nbsp;
+                    <span>Phục vụ 24/24 Giao hàng tới 64 tỉnh thành với giá cước hợp lý nhất. Thời gian đối với chúng tôi là vàng.</span>
+                </div>
+                <a href="#!" title="Title" style="text-decoration: none;color:#000;">
+                    <div class="advertisement">
+                        <img src="../img/img22.png" alt="Image Advertisement">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container-footer">
+            <div class="headquarters">
+                <h3>Trụ sở chính:</h3>
+                <p>Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.</p>
+                <p>Điện thoại: 04.3311.3998</p>
+                <p>Fax: 04.3311.3996</p>
+            </div>
+            <div class="headquarters">
+                <h3>Chi nhánh Đà Nẵng:</h3>
+                <p>Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.</p>
+                <p>Điện thoại: 04.3311.3998</p>
+                <p>Fax: 04.3311.3996</p>
+            </div>
+            <div class="headquarters">
+                <h3>Chi nhánh Hồ Chí Minh:</h3>
+                <p>Số 6A8A, Thanh Xuân Bắc, Phường Thanh Xuân Bắc, Quận Thanh Xuân, Thành phố Hà Nội.</p>
+                <p>Điện thoại: 04.3311.3998</p>
+                <p>Fax: 04.3311.3996</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2016 - All rights reserved</p>
+        </div>
+    </footer>
+    <script src="../js/header.js"></script>
+</body>
+</html>

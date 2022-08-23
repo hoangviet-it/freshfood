@@ -1,0 +1,97 @@
+@import url(../css/header.css);
+@import url(../css/main-right.css);
+@import url(../css/breadCrumb.css);
+@import url(../css/comment.css);
+@import url(../css/footer.css);
+
+.item-news {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.content-news {
+    margin-left: 40px;
+}
+.frame-img-news,
+.frame-img-news img {
+    height: 193px;
+    width: 308px;
+}
+.content-news h2 {
+    font: 16pt 'Roboto Regular';
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.content-news p {
+    color: #636363;
+    font: 9.6pt 'Roboto Regular';
+    line-height: 23px;
+    text-align: justify;
+    margin-top: 7px;
+}
+.time {
+    color: #959595;
+    font: 13px 'Roboto Regular';
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.fa-clock {
+    background-color: #959595;
+    border: 1px solid #959595;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 9px;
+    padding: .55px;
+}
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    margin: auto;
+    margin-bottom: 35px;
+    padding: 35px 0;
+    width: 115px;
+}
+.pagination div {
+    background-color: #c50808;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    width: 35px;
+}
+
+@media only screen and (max-width: 1169px) {
+    .main {
+        padding: 0 15px;
+    }
+    .container-left {
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .item-news {
+        flex-wrap: wrap;
+    }
+    .frame-img-news {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .content-news {
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .frame-img-news,
+    .frame-img-news img {
+        height: 180px;
+        width: 280px;
+    }
+}
+@media only screen and (max-width: 280px) {
+    .frame-img-news,
+    .frame-img-news img {
+        height: 150px;
+        width: 210px;
+    }
+}
